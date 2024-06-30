@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "BDO-Grotesk vf";
+  font-weight: 300 900;
+  src: url(./assets/fonts/BDOGrotesk-VF.woff2);
+}
+
+html.lenis,
+html.lenis body {
+  height: 100%;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+:root {
+  --font_BDO_Grostesk_vf: "BDO-Grotesk vf";
+  --font_weight_light: 300;
+  --font_weight_regular: 400;
+  --font_weight_bold: 700;
+  --color_white: #f1f1f1;
+  --color_black: #000000;
+  --color_grey: #808080;
+  --nav-list-before-border-color: #f1f1f1;
+  --nav-list-before-background-color-hover: #f1f1f1;
+  --font_size_very_small: 0.8vw;
+  --font_size_small: 1vw;
+  --font_size_regular: 2vw;
+  --font_size_medium: 3vw;
+  --font_size_big: 5vw;
+  --font_size_very_big: 15vw;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: var(--font_BDO_Grostesk_vf);
+  background: var(--color_black);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+}
+
+
+
+.loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color_black);
+  color: var(--color_white);
+  z-index: 10000;
+}
+
+.counter {
+  position: absolute;
+  top: 0.3em;
+  left: 50%;
+  width: 50%;
+  text-align: center;
+  font-size: var(--font_size_very_big);
+  font-weight: var(--font_weight_regular);
+  font-family: var(--font-Instrument_Serif);
+}
+
+#hero_animation {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  /* position: none; */
+}
